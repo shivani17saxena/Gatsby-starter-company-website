@@ -1,0 +1,44 @@
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    align-items: center;
+    margin-top: 2rem;
+    justify-items: end;
+}
+.image {
+    width: 90%;
+    float: right;
+}
+.image img {
+    width: 90%;
+}
+.text {
+    width: 95%;
+    /* margin-left: 20px; */
+}
+
+.text h2 {
+    font-size : 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+    .image {
+        width: 100%;
+        text-align: center;
+    }
+    .text h2{
+        width: 99%;
+        /* line-height: 2rem; */
+    }
+    .text h3 {
+        width: 99%;
+        text-align: center;
+        /* margin: 10px 10px 0 20px; */
+    }
+}
